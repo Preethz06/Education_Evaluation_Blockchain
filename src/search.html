@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Evaluations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Search Evaluations</h1>
+            <nav>
+                <a href="index.html">Add Evaluation</a>
+            </nav>
+        </header>
+        <main>
+            <section class="form-section">
+                <h2>Search by Student ID</h2>
+                <form id="searchForm">
+                    <div class="form-group">
+                        <label for="searchStudentId">Student ID:</label>
+                        <input type="text" id="searchStudentId" required>
+                    </div>
+                    <button type="submit" class="btn">Search</button>
+                </form>
+            </section>
+            <section class="list-section">
+                <h2>Search Results</h2>
+                <ul id="searchResults"></ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Education Evaluation</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>
